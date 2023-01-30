@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SENTIMENTAL ANALYSIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href={{url_for('static',filename='style/style.css')}}>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <h1>SENTIMENTAL ANALYSIS</h1>
+    <form method="POST" class="form" >
+<!--        <input type="text" name="inp" placeholder="Enter Your Feelings">-->
+<!--        <input type="submit" name="submit" class="btn btn-primary" id="btn" placeholder="Enter Your Feelings">-->
+        <div class="form-outline mb-4">
+        <textarea class="form-control" name="inp" id="inp" placeholder="Enter Your Feelings" rows="4"></textarea>
+            <input type="submit" name="submit" class="btn btn-primary" id="btn">
+  </div>
+    </form>
+        <h1 class="output">{{message}}</h1>
+</div>
+
+</body>
+</html>
